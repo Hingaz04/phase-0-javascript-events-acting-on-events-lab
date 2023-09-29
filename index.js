@@ -16,3 +16,17 @@ document.addEventListener("keydown", function (e) {
   }
 });
 undefined
+
+
+function moveDodgerRight() {
+  
+  let dodger = document.getElementById("dodger"); 
+  let currentLeft = parseInt(dodger.style.left || 0, 10);
+
+  let moveAmount = 10;
+
+  let newLeft = currentLeft + moveAmount;
+  dodger.style.left = newLeft + "px";
+}
+
+
